@@ -31,6 +31,21 @@ form {
   background-color: #FF8906;
 }
 
+.facebook{
+  background-image: url(../Icon/Fb.png);
+  background-size: 30%;
+}
+
+.twitter{
+  background-image: url(../Icon/twitter-4.png);
+  background-size: 60%;
+}
+
+.instagram{
+  background-image: url(../Icon/Ig.png);
+  background-size: 60%;
+}
+
 nav a{
   text-decoration: none;
   color: white;
@@ -64,6 +79,18 @@ nav .left{
   width: 50%;
   gap: 50px;
   padding-left: 8%;
+}
+
+nav .left div{
+  height: 30px;
+  border-width: 0 0 2px 0;
+  border-style: solid;
+  border-color: rgba(1, 1, 1, 0);
+  transition: 0.15s;
+}
+
+nav .left div:hover{
+  border-color: #FF8906;
 }
 
 nav .right{
@@ -293,6 +320,9 @@ footer button{
   background-color: #FF8906;
   border: none;
   border-radius: 17px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .collection{
@@ -1101,6 +1131,11 @@ div.card div.details form .cart{
   border-width: 2px;
   border-color: #E8E8E8;
   border-style: solid;
+  transition: 0.15s;
+}
+
+.detail-product > header > .right > div > .form > form > :nth-child(3) > div:hover{
+  border-color: #FF8906;
 }
 
 .detail-product > header > .right > div > .form > form > :nth-child(5) > div {
@@ -1114,6 +1149,11 @@ div.card div.details form .cart{
   border-width: 2px;
   border-color: #E8E8E8;
   border-style: solid;
+  transition: 0.15s;
+}
+
+.detail-product > header > .right > div > .form > form > :nth-child(5) > div:hover{
+  border-color: #FF8906;
 }
 
 .detail-product > header > .right > div > .form > form > :nth-child(5) > div > input{
@@ -1324,6 +1364,7 @@ div.card div.details form .cart{
     background-color: rgba(1, 1, 1, 0.1);
     position: absolute;
     top: 0;
+    gap: 0;
   }
 
   .home > nav > .left {
@@ -1338,6 +1379,7 @@ div.card div.details form .cart{
     padding-left: 0;
     margin-left: 0;
     width: 100vw;
+    margin-right: auto;
   }
 
   .home header{
@@ -1689,9 +1731,12 @@ div.card div.details form .cart{
   }
   
   .home footer{
-    display: flex;
+    display: grid;
     flex-direction: column;
     align-items: start;
+    height: 200vh;
+    /* padding-top: 100px; */
+    gap: 0px;
   }
 }
 
