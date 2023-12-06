@@ -1303,9 +1303,9 @@ div.card div.details form .cart{
   display: flex;
 }
 
-.history-order > section > .left > div > .content{
-  /* display: flex; */
-}
+/* .history-order > section > .left > div > .content{
+  display: flex;
+} */
 
 .history-order > section > .left > div > .content > .item{
   display: flex;
